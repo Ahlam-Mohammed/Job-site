@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url("../fonts/Tajawal-Regular.ttf");
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
+body{
+    font-family: 'Tajawal', sans-serif;
+    /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
+    /* background-color: hsl(237, 17%, 24%); */
+}
+.bg{
+    background-color: hsl(237, 17%, 24%);
+    /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
+}
+.bg-50{
+    background-color: hsl(236, 14%, 37%);
+}
+a{
+    text-decoration: none;
+}
+.fs-7{
+    font-size: 14px;
+}
+.fs-8{
+    font-size: 13px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.pl{
+    padding-left: 2.5rem;
+}
