@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahlam Mohammed">
+    <meta name="keywords" content="Job , وظائف">
+    <meta name="description" content="موقع مختص في توفير الوظائف">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.css"> -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Dashboard</title>
+</head>
+<body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Job.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/job.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light">Companies</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="../templates/about.html" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/services.html">Services</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn text-light mx-3" type="submit"><a class="text-light" href="../templates/login.html"><i class="bi bi-person-fill m-2"></i> Sign in</a></button>
+                    <button class="btn btn btn-outline-light" type="submit"><a class="text-light" href="../templates/register.html"> Sign up</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center flex-column" style="height: 60vh;">
+                        <div class="row">
+                            <figure class="d-flex justify-content-center">
+                                <img src="../assets/images/me2.jpg" width="15%" class="img-fluid rounded-circle" alt="">
+                            </figure>
+                        </div>
+                        <div class="row">
+                            <h1 class="text-primary fs-2">Ahlam Mohammed</h1>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary fw-bold">- Full stack developer -</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="home" aria-selected="true">About</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button" role="tab" aria-controls="profile" aria-selected="false">Experience</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <!-- About Tap -->
+                        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="row">
+                                        <!-- Personal Information -->
+                                        <div class="col-12">
+                                            <article class="card position-sticky p-3">
+                                                <header class="card-header bg-transparent">
+                                                    <h1 class="text-primary fs-4">Personal Information</h1>
+                                                </header>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-1">
+                                                        <h4 class="fs-6 fw-bold">Birth date</h4>
+                                                        <span class="text-secondary">31 May 1998</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-1">
+                                                        <h4 class="fs-6 fw-bold">Your nationality</h4>
+                                                        <span class="text-secondary">Yemeni</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-1">
+                                                        <h4 class="fs-6 fw-bold">Residence country</h4>
+                                                        <span class="text-secondary">Yemen</span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-1">
+                                                        <h4 class="fs-6 fw-bold">Gender</h4>
+                                                        <span class="text-secondary">Female</span>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- Compleate Profile -->
+                                        <!-- <div class="col-12 mt-4">
+                                            <article class="card p-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-center align-items-center flex-column" >
+                                                        <div class="row">
+                                                            <div class="progress__circular p-5">
+                                                                <div class="circular">
+                                                                    <div class="inner"></div>
+                                                                    <div class="number">100%</div>
+                                                                    <div class="circle">
+                                                                        <div class="bar left">
+                                                                            <div class="progress"></div>
+                                                                        </div>
+                                                                        <div class="bar right">
+                                                                            <div class="progress"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h1 class="text-primary fs-2">Ahlam Mohammed</h1>
+                                                        </div>
+                                                        <div class="row">
+                                                            <p class="text-secondary fw-bold">- Full stack developer -</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="row">
+                                        <!-- About -->
+                                        <div class="col-12">
+                                            <article class="card p-3">
+                                                <header class="card-header bg-transparent">
+                                                    <h1 class="text-primary fs-4">About <span class="text-secondary">Ahlam</span></h1>
+                                                </header>
+                                                <div class="card-body">
+                                                    <p class="text-secondary">My name is Ahlam Mohammed, I'm a Full stack developer with a great passion for programming. I am passionate about delivering solutions that add to people's lives and at the same time challenge me. Improved my skills as a Front-End and Back-End developer.</p>
+                                                    <p class="text-secondary">I develop websites and applications using HTML, CSS, and php. I'm always improving myself with each project I get my hands on.</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- Skills -->
+                                        <div class="col-12 mt-4">
+                                            <article class="card p-3">
+                                                <header class="card-header bg-transparent">
+                                                    <h1 class="text-primary fs-4">Skills</h1>
+                                                </header>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <!-- single skill -->
+                                                        <div class="col-12 mb-2">
+                                                            <div class=" shadow-sm p-3">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <h5>Leadership Skills</h5>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- single skill -->
+                                                        <div class="col-12 mb-2">
+                                                            <div class=" shadow-sm p-3">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <h5>Problem Solving</h5>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- single skill -->
+                                                        <div class="col-12 mb-2">
+                                                            <div class=" shadow-sm p-3">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <h5>Teamwork Skills</h5>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- single skill -->
+                                                        <div class="col-12 mb-2">
+                                                            <div class=" shadow-sm p-3">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <h5>Writing Content</h5>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience Tap -->
+                        <div class="tab-pane fade " id="experience" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <!-- Education -->
+                                <div class="col-5">
+                                    <article class="card p-3">
+                                        <header class="card-header bg-transparent">
+                                            <h1 class="text-primary fs-4">Education</span></h1>
+                                        </header>
+                                        <div class="card-body">
+                                            <!-- single experience -->
+                                            <div class="col-12 mb-5">
+                                                <div class=" shadow-sm p-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <a href="../templates/detailsExp.html"><h4><b>Information Technology</b> <span class="fs-5">, Bachelor's degree</span></h4></a>
+                                                    </div>
+                                                    <div class="">
+                                                        <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                            <h6 class="text-black">University of Science and Technology</h6>
+                                                            <span>Yemen - Sanaa</span>
+                                                            <span>May 2021</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- Experience -->
+                                <div class="col-7">
+                                    <article class="card p-3">
+                                        <header class="card-header bg-transparent">
+                                            <h1 class="text-primary fs-4">Experience</h1>
+                                        </header>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <!-- single experience -->
+                                                <div class="col-12 mb-5">
+                                                    <div class=" shadow-sm p-3">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <a href="../templates/detailsExp.html"><h4>Web Developer at softUpgrade Company</h4></a>
+                                                        </div>
+                                                        <div class="">
+                                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                                <span>Yemen - Sanaa</span>
+                                                                <span>My current job since January 2020</span>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single experience -->
+                                                <div class="col-12 mb-5">
+                                                    <div class=" shadow-sm p-3">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <a href="../templates/detailsExp.html"><h4>Web Developer at start Company</h4></a>
+                                                        </div>
+                                                        <div class="">
+                                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                                <span>Yemen - Sanaa</span>
+                                                                <span>My current job since January 2020</span>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact Tap -->
+                        <!-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

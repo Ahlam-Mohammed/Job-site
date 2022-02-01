@@ -8,6 +8,7 @@ body{
     /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
     /* background-color: hsl(237, 17%, 24%); */
     /* background-color: #ffffffed;; backdrop-filter: blur(6px); */
+    /* background-color: linear-gradient(227deg,#5240CB 0%,#302866 80%); */
     background-color: #F1F1F2;
 }
 .bg{
@@ -31,13 +32,102 @@ a{
     height: 40px;
     width: 40px;
 }
+.logo-lg{
+    height: 70px;
+    width: 70px;
+}
 .pl{
     padding-left: 2.5rem;
 }
 .h--75{
     height: 80px;
 }
-.active{
-    /* background-color: hsl(237, 17%, 24%); */
-    /* background-color: hsla(240, 1%, 19%, 0.719);; backdrop-filter: blur(6px); */
+/* circle Progress */
+.progress__circular{
+    display:grid;
+    /* height:100%; */
+    text-align: center;
+    place-items: center;
+    background: #fff;
+}
+.circular{
+    height:100px;
+    width: 100px;
+    position: relative;
+    transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
+}
+.circular .inner{
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #dde6f0;
+    border-radius: 100%;
+}
+.circular .number{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    font-size:18px;
+    font-weight:500;
+    color:#0D6EFD;
+}
+.circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: #0D6EFD;
+}
+.circle .left .progress{
+    z-index:1;
+    animation: left 4s linear both;
+}
+@keyframes left{
+    100%{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+}
+}
+.circle .right {
+    transform: rotate(180deg);
+    z-index:3;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.circle .right .progress{
+    animation: right 4s linear both;
+    animation-delay:4s;
+}
+@keyframes right{
+    100%{
+        transform: rotate(140deg);
+        -webkit-transform: rotate(140deg);
+        -moz-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+        -o-transform: rotate(140deg);
+}
 }
