@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahlam Mohammed">
+    <meta name="keywords" content="Job , وظائف">
+    <meta name="description" content="موقع مختص في توفير الوظائف">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.css"> -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Job.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/job.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light">Companies</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="../templates/about.html" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/services.html">Services</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn text-light mx-3" type="submit"><a class="text-light" href="../templates/login.html"><i class="bi bi-person-fill m-2"></i> Sign in</a></button>
+                    <button class="btn btn btn-outline-light" type="submit"><a class="text-light" href="../templates/register.html"> Sign up</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-lg mt-4">
+            <div class="row">
+                <!-- Dashboard Section -->
+                <section class="col-4">
+                    <div class="card shadow p-3 pt-0">
+                        <div class="row">
+                            <!-- image profile -->
+                            <div class="col-12 d-flex justify-content-center align-items-center p-4 position-relative">
+                                <img src="../assets/images/me2.jpg" width="50%" class="img-fluid rounded-circle" alt="">
+                                <a role="button" data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute bg-white
+                                    border border-primary rounded d-flex justify-content-center align-items-lg-center rounded-circle" 
+                                    style="bottom: 10%;left: 35%; width: 30px;height: 30px;">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 text-center mb-5">
+                                <a class="fs-4 fw-bold" href="">Ahlam Mohammed</a>
+                                <p>Web Developer</p>
+                            </div>
+                            <!-- navegation dashboard -->
+                            <div class="col-12">
+                                <nav class="row">
+                                    <header class="col-12 mb-3">
+                                        <h3 class="text-secondary fs-5">Dashboard</h3>
+                                    </header>
+                                    <div class="col-4 mb-4 ">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/dashboard.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-house-door fs-4"></i>
+                                                <span class="fs-6 fw-bold">Home</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
+                                            <a href="../templates/acount.html" class="d-flex flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-person fs-4"></i>
+                                                <span class="fs-6 fw-bold ">Account</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/skills.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-graph-up-arrow fs-4"></i>
+                                                <span class="fs-6 fw-bold">Skills</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/experience.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-lightning fs-4"></i>
+                                                <span class="fs-6 fw-bold">Experience</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/education.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-mortarboard fs-4"></i>
+                                                <span class="fs-6 fw-bold">Education</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/course.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-card-checklist fs-4"></i>
+                                                <span class="fs-6 fw-bold">Courses</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content Section -->
+                <section class="col-8">
+                    <div class="card  shadow p-3">
+                        <div class="card-header bg-transparent">
+                            <h1 class="fs-3 fw-bold text-primary">Acount</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="d-flex justify-content-center align-items-center position-relative">
+                                        <img src="../assets/images/me2.jpg" width="100%" class="img-fluid rounded-circle" alt="">
+                                        <button data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute btn btn-primary" style="bottom:0;left:0;"><i class="bi bi-pencil-square"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="text" class="form-control rounded-pill" placeholder="First Name" aria-label="fName" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="text" class="form-control rounded-pill" placeholder="Last Name" aria-label="lName" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="input-group flex-nowrap">
+                                                <select class="form-select rounded-pill" aria-label="Default select example" required>
+                                                    <option selected>+967</option>
+                                                    <option value="1">+965</option>
+                                                    <option value="2">+965</option>
+                                                    <option value="3">+965</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="text" class="form-control rounded-pill" placeholder="Phone Number" aria-label="phone" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="email" class="form-control rounded-pill" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group flex-nowrap">
+                                                <select class="form-select rounded-pill" aria-label="Default select example" required>
+                                                    <option selected>Gender</option>
+                                                    <option value="1">Female</option>
+                                                    <option value="2">Male</option>
+                                                    <option value="3">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group flex-nowrap">
+                                                <input type="date" name="" id="" class="form-control rounded-pill">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-5">
+                                            <button class="btn btn-primary d-block w-100 rounded-pill" type="submit">Save</button>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Edit Image Profile -->
+    <div class="modal fade" id="editImg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Edit image profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <!-- Job details -->
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

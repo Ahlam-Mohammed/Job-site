@@ -7,13 +7,16 @@ body{
     font-family: 'Tajawal', sans-serif;
     /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
     /* background-color: hsl(237, 17%, 24%); */
+    /* background-color: #ffffffed;; backdrop-filter: blur(6px); */
+    background-color: #F1F1F2;
 }
 .bg{
     background-color: hsl(237, 17%, 24%);
     /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
 }
 .bg-50{
-    background-color: hsl(236, 14%, 37%);
+    background-color: #ffffffed;
+    backdrop-filter: blur(6px);;
 }
 a{
     text-decoration: none;
@@ -30,4 +33,11 @@ a{
 }
 .pl{
     padding-left: 2.5rem;
+}
+.h--75{
+    height: 80px;
+}
+.active{
+    /* background-color: hsl(237, 17%, 24%); */
+    /* background-color: hsla(240, 1%, 19%, 0.719);; backdrop-filter: blur(6px); */
 }

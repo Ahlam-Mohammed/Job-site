@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ahlam Mohammed">
+    <meta name="keywords" content="Job , وظائف">
+    <meta name="description" content="موقع مختص في توفير الوظائف">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.css"> -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Job.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/job.html">Find Jobs</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light">Companies</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="../templates/about.html" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/services.html">Services</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-light" href="../templates/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn text-light mx-3" type="submit"><a class="text-light" href="../templates/login.html"><i class="bi bi-person-fill m-2"></i> Sign in</a></button>
+                    <button class="btn btn btn-outline-light" type="submit"><a class="text-light" href="../templates/register.html"> Sign up</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-lg mt-4">
+            <div class="row">
+                <!-- Dashboard Section -->
+                <section class="col-4">
+                    <div class="card shadow p-3 pt-0">
+                        <div class="row">
+                            <!-- image profile -->
+                            <div class="col-12 d-flex justify-content-center align-items-center p-4 position-relative">
+                                <img src="../assets/images/me2.jpg" width="50%" class="img-fluid rounded-circle" alt="">
+                                <a role="button" data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute bg-white
+                                    border border-primary rounded d-flex justify-content-center align-items-lg-center rounded-circle" 
+                                    style="bottom: 10%;left: 35%; width: 30px;height: 30px;">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 text-center mb-5">
+                                <a class="fs-4 fw-bold" href="">Ahlam Mohammed</a>
+                                <p>Web Developer</p>
+                            </div>
+                            <!-- navegation dashboard -->
+                            <div class="col-12">
+                                <nav class="row">
+                                    <header class="col-12 mb-3">
+                                        <h3 class="text-secondary fs-5">Dashboard</h3>
+                                    </header>
+                                    <div class="col-4 mb-4 ">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/dashboard.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-house-door fs-4"></i>
+                                                <span class="fs-6 fw-bold">Home</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/acount.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-person fs-4"></i>
+                                                <span class="fs-6 fw-bold ">Account</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/skills.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-graph-up-arrow fs-4"></i>
+                                                <span class="fs-6 fw-bold">Skills</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
+                                            <a href="../templates/experience.html" class="d-flex flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-lightning fs-4"></i>
+                                                <span class="fs-6 fw-bold">Experience</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/education.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-mortarboard fs-4"></i>
+                                                <span class="fs-6 fw-bold">Education</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <article class="card bg-transparent h--75 pt-1">
+                                            <a href="../templates/course.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
+                                                <i class="bi bi-card-checklist fs-4"></i>
+                                                <span class="fs-6 fw-bold">Courses</span>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content Section -->
+                <section class="col-8">
+                    <div class="card shadow p-3">
+                        <div class="card-header bg-transparent d-flex justify-content-between align-items-center">
+                            <h1 class="fs-3 fw-bold text-primary">Experience</h1>
+                            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus fw-bold fs-3 text-primary"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- single experience -->
+                                <div class="col-12 mb-5">
+                                    <div class=" shadow-sm p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                            <div>
+                                                <div class="dropdown">
+                                                    <a role="button" class="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+                                                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                                                    <!-- </button> -->
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li class="p-2">
+                                                            <a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                <i class="bi bi-pencil-square text-primary"></i>
+                                                                <span class="d-inline-block"> Edit</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="p-2">
+                                                            <a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                                <i class="bi bi-trash text-danger"></i>
+                                                                <span class="d-inline-block"> Delete</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary fs-5"></i></a> -->
+                                                <!-- <a role="button" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger fs-5"></i></a> -->
+                                                <!-- <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button> -->
+                                                <!-- <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button> -->
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                <span>Yemen - Sanaa</span>
+                                                <span>My current job since January 2020</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single experience -->
+                                <div class="col-12 mb-5">
+                                    <div class=" shadow-sm p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                            <div>
+                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                <span>Yemen - Sanaa</span>
+                                                <span>My current job since January 2020</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single experience -->
+                                <div class="col-12 mb-5">
+                                    <div class=" shadow-sm p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                            <div>
+                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                <span>Yemen - Sanaa</span>
+                                                <span>My current job since January 2020</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single experience -->
+                                <div class="col-12 mb-5">
+                                    <div class=" shadow-sm p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                            <div>
+                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                <span>Yemen - Sanaa</span>
+                                                <span>My current job since January 2020</span>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Add Experience -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Add Experience</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <!-- Job details -->
+                        <div class="col-12">
+                            <label for="jop-position" class="form-label">What is the job of this positio?</label>
+                            <input type="text" class="form-control rounded-pill" id="jop-position" placeholder="Ex. Head of Human Resources">
+                        </div>
+                        <div class="col-12">
+                            <label for="job-field" class="form-label">Which job field does this title fall under?</label>
+                            <input type="text" class="form-control rounded-pill" id="job-field" placeholder="Ex. Human Resources">
+                        </div>
+                        <div class="col-12">
+                            <label for="job-location" class="form-label">Job location</label>
+                            <input type="text" class="form-control rounded-pill" id="job-location" placeholder="Choose location">
+                        </div>
+                        <div class="col-12">
+                            <label for="job-city" class="form-label">Choose city</label>
+                            <input type="text" class="form-control rounded-pill" id="job-city" placeholder="Citu">
+                        </div>
+                        <div class="col-12">
+                            <label for="start-date" class="form-label">Start Date</label>
+                            <input type="date" class="form-control rounded-pill" id="start-date" placeholder="start-date">
+                        </div>
+                        <div class="col-12">
+                            <label for="end-date" class="form-label">End Date</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I still work here
+                                </label>
+                            </div>
+                            <input type="date" class="form-control rounded-pill" id="end-date" placeholder="end-date">
+                        </div>
+                        <div class="col-12">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea name="" class="form-control rounded" id="description" cols="30" rows="10"></textarea>
+                            <!-- <input type="text" class="form-control rounded-pill" id="description" placeholder="Description"> -->
+                        </div>
+                        <!-- Company details -->
+                        <div class="col-12">
+                            <h3 class="fw-bold">Company details</h3>
+                        </div>
+                        <div class="col-12">
+                            <label for="company-name" class="form-label">Company Name</label>
+                            <input type="text" class="form-control rounded-pill" id="company-name" placeholder="Company name">
+                        </div>
+                        <div class="col-12">
+                            <label for="company-lndustry" class="form-label">Company lndustry</label>
+                            <input type="text" class="form-control rounded-pill" id="company-industry" placeholder="Company lndustry">
+                        </div>
+                        <div class="col-12">
+                            <label for="company-size" class="form-label">Company size</label>
+                            <select class="form-select rounded-pill" aria-label="Default select example" id="company-size">
+                                <option selected disabled>Company size</option>
+                                <option value="1">1-9 Employees</option>
+                                <option value="2">10-49 Employees</option>
+                                <option value="3">50-99 Employees</option>
+                                <option value="3">100-499 Employees</option>
+                                <option value="3">500 Employees or more</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body fw-bold d-flex justify-content-lg-center align-items-center flex-column">
+                    <i class="bi bi-exclamation-circle fs-1 text-danger"></i>
+                    <h3 class="fs-4">Do you want to delete?</h3>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-danger">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Image Profile -->
+    <div class="modal fade" id="editImg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Edit image profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <!-- Job details -->
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
