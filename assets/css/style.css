@@ -12,8 +12,23 @@ body{
     background-color: #F1F1F2;
 }
 .bg{
-    background-color: hsl(237, 17%, 24%);
-    /* background: linear-gradient(hsl(240, 20%, 8%), hsl(237, 15%, 28%)); */
+    /* background-color: hsl(237, 17%, 24%); */
+    background: linear-gradient(227deg,#52536A 0%,#52536A 80%);
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px 0px;
+
+}
+.bg--light{
+    background-color: #52536a08;;
+    backdrop-filter: blur(6px);
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.bg-20{
+    background-color: #52536A;
 }
 .bg-50{
     background-color: #ffffffed;
@@ -42,6 +57,59 @@ a{
 .h--75{
     height: 80px;
 }
+.border-radius{
+    border-radius: 0 20% 0;
+    -webkit-border-radius: 0 20% 0;
+    -moz-border-radius: 0 20% 0;
+    -ms-border-radius: 0 20% 0;
+    -o-border-radius: 0 20% 0;
+    
+}
+@media screen and (max-width: 768px) {
+    .suggestion{
+        height: 300px !important;
+    }
+    .search{
+        width: 90% !important;
+    }
+    
+}
+@media screen and (max-width: 1235px) and (min-width:773px) {
+    .search{
+        bottom: 45px !important;
+    } 
+    .profile-img{
+        width: 15%;
+    } 
+}
+@media screen and (max-width:773px) {
+    .search{
+        top: 22px !important;
+    }  
+    .profile-img{
+        width: 20%;
+    }
+}
+@media screen and (max-width:992px) {
+    lottie-player{
+        width: 300px !important;
+        margin: auto !important;
+    }
+    .bg-login{
+        height: 338px !important;
+        /* margin-top: 20px; */
+    }
+}
+@media screen and (max-whdth:474px) {
+    .profile-img{
+        width: 35%;
+    }
+}
+@media screen and (max-width:413px) {
+    .profile-img{
+        width: 40%;
+    }
+}
 /* circle Progress */
 .progress__circular{
     display:grid;
@@ -54,11 +122,11 @@ a{
     height:100px;
     width: 100px;
     position: relative;
-    transform:scale(1.5);
+    /* transform:scale(1.5);
     -webkit-transform:scale(1.5);
     -moz-transform:scale(1.5);
     -ms-transform:scale(1.5);
-    -o-transform:scale(1.5);
+    -o-transform:scale(1.5); */
 }
 .circular .inner{
     position: absolute;

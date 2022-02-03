@@ -16,111 +16,88 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Dashboard</title>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg">
-        <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#">Job.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="../templates/job.html">Find Jobs</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light">Companies</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a href="../templates/about.html" class="nav-link text-light">About Us</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="../templates/services.html">Services</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="../templates/contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn text-light mx-3" type="submit"><a class="text-light" href="../templates/login.html"><i class="bi bi-person-fill m-2"></i> Sign in</a></button>
-                    <button class="btn btn btn-outline-light" type="submit"><a class="text-light" href="../templates/register.html"> Sign up</a></button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
+<body class="bg-light">
     <main>
-        <div class="container-lg mt-4">
-            <div class="row">
-                <!-- Dashboard Section -->
-                <section class="col-lg-4 col-md-4 col-12 mb-3">
-                    <div class="card shadow p-3 pt-0">
+        <div class="w-100">
+            <div class="row p-0 m-0">
+                <div class="col-lg-3 col-12 pb-4" style="background-image: url(../assets/images/circle/bg-login.svg);background-size: cover;background-position: center;">
+                    <div class="row">
+                        <!-- Nav -->
+                        <div class="col-12">
+                            <div class="d-flex align-items-center mt-lg-3">
+                                <div class=" d-flex logo shadow align-items-center justify-content-center">
+                                    <a href="../index.html"><i class="bi bi-house-door-fill text-light"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- image profile -->
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-10 m-auto d-flex justify-content-center align-items-center p-4 pt-0 position-relative">
+                            <img src="../assets/images/me2.jpg" width="50%" class="img-fluid rounded-circle border border-2 shadow border-light" alt="">
+                            <a role="button" data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute bg-white
+                                border border-primary rounded d-flex justify-content-center align-items-lg-center rounded-circle" 
+                                style="bottom: 10%;left: 35%; width: 30px;height: 30px;">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                        </div>
+                        <div class="row text-center">
+                            <h1 class="text-light fs-3">Ahlam Mohammed</h1>
+                        </div>
+                        <div class="row text-center">
+                            <p class="text-white">- Full stack developer -</p>
+                        </div>
+                        <div class="row text-center">
+                            <button class="btn w-25 m-auto btn-sm btn-primary d-inline"><a href="../templates/profile.html" class="text-light">Profile</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="container-md">
                         <div class="row">
-                            <!-- image profile -->
-                            <div class="col-12 d-flex justify-content-center align-items-center p-4 position-relative">
-                                <img src="../assets/images/me2.jpg" width="50%" class="img-fluid rounded-circle" alt="">
-                                <a role="button" data-bs-toggle="modal" data-bs-target="#editImg" class="position-absolute bg-white
-                                    border border-primary rounded d-flex justify-content-center align-items-lg-center rounded-circle" 
-                                    style="bottom: 10%;left: 35%; width: 30px;height: 30px;">
-                                    <i class="bi bi-pencil-square"></i>
-                                </a>
-                            </div>
-                            <div class="col-12 text-center mb-5">
-                                <a class="fs-4 fw-bold" href="">Ahlam Mohammed</a>
-                                <p>Web Developer</p>
-                            </div>
                             <!-- navegation dashboard -->
                             <div class="col-12">
-                                <nav class="row">
-                                    <header class="col-12 mb-3">
-                                        <h3 class="text-secondary fs-5">Dashboard</h3>
-                                    </header>
-                                    <div class="col-4 mb-4 ">
-                                        <article class="card bg-transparent h--75 pt-1">
+                                <nav class="row mt-3">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
                                             <a href="../templates/dashboard.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-house-door fs-4"></i>
                                                 <span class="fs-6 fw-bold">Home</span>
                                             </a>
                                         </article>
                                     </div>
-                                    <div class="col-4 mb-4">
-                                        <article class="card bg-transparent h--75 pt-1">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
                                             <a href="../templates/acount.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-person fs-4"></i>
                                                 <span class="fs-6 fw-bold ">Account</span>
                                             </a>
                                         </article>
                                     </div>
-                                    <div class="col-4 mb-4">
-                                        <article class="card bg-transparent h--75 pt-1">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
                                             <a href="../templates/skills.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-graph-up-arrow fs-4"></i>
                                                 <span class="fs-6 fw-bold">Skills</span>
                                             </a>
                                         </article>
                                     </div>
-                                    <div class="col-4 mb-4">
-                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card shadow h--75 pt-1">
                                             <a href="../templates/experience.html" class="d-flex flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-lightning fs-4"></i>
                                                 <span class="fs-6 fw-bold">Experience</span>
                                             </a>
                                         </article>
                                     </div>
-                                    <div class="col-4 mb-4">
-                                        <article class="card bg-transparent h--75 pt-1">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
                                             <a href="../templates/education.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-mortarboard fs-4"></i>
                                                 <span class="fs-6 fw-bold">Education</span>
                                             </a>
                                         </article>
                                     </div>
-                                    <div class="col-4 mb-4">
-                                        <article class="card bg-transparent h--75 pt-1">
+                                    <div class="col-lg-2 col-md-4 col-4 mb-3">
+                                        <article class="card bg-transparent shadow-sm h--75 pt-1">
                                             <a href="../templates/course.html" class="d-flex text-secondary flex-column justify-content-center align-items-center">
                                                 <i class="bi bi-card-checklist fs-4"></i>
                                                 <span class="fs-6 fw-bold">Courses</span>
@@ -130,119 +107,100 @@
                                 </nav>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Content Section -->
-                <section class="col-lg-8 col-md-8 col-12">
-                    <div class="card shadow p-3">
-                        <div class="card-header bg-transparent d-flex justify-content-between align-items-center">
-                            <h1 class="fs-3 fw-bold text-primary">Experience</h1>
-                            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus fw-bold fs-3 text-primary"></i></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <!-- single experience -->
-                                <div class="col-12 mb-5">
-                                    <div class=" shadow-sm p-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
-                                            <div>
-                                                <div class="dropdown">
-                                                    <a role="button" class="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
-                                                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                                                    <!-- </button> -->
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                        <li class="p-2">
-                                                            <a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                <i class="bi bi-pencil-square text-primary"></i>
-                                                                <span class="d-inline-block"> Edit</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="p-2">
-                                                            <a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#delete">
-                                                                <i class="bi bi-trash text-danger"></i>
-                                                                <span class="d-inline-block"> Delete</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                        <!-- Content Section -->
+                        <div class="row p-lg-4">
+                            <div class="col-12 mb-3">
+                                <div class="card shadow p-3">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h1 class="fs-3 fw-bold text-primary">Experience</h1>
+                                        <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus fw-bold fs-3 text-primary"></i></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- single experience -->
+                                            <div class="col-12 mb-5">
+                                                <div class="bg-light border-primary border-3 border-start shadow-sm p-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                                        <div>
+                                                            <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                            <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                            <span>Yemen - Sanaa</span>
+                                                            <span>My current job since January 2020</span>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <!-- <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary fs-5"></i></a> -->
-                                                <!-- <a role="button" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger fs-5"></i></a> -->
-                                                <!-- <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button> -->
-                                                <!-- <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button> -->
                                             </div>
-                                        </div>
-                                        <div class="">
-                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
-                                                <span>Yemen - Sanaa</span>
-                                                <span>My current job since January 2020</span>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
-                                            </a>
+                                            <!-- single experience -->
+                                            <div class="col-12 mb-5">
+                                                <div class="bg-light border-primary border-3 border-start shadow-sm p-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                                        <div>
+                                                            <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                            <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                            <span>Yemen - Sanaa</span>
+                                                            <span>My current job since January 2020</span>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single experience -->
+                                            <div class="col-12 mb-5">
+                                                <div class="bg-light border-primary border-3 border-start shadow-sm p-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                                        <div>
+                                                            <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                            <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                            <span>Yemen - Sanaa</span>
+                                                            <span>My current job since January 2020</span>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single experience -->
+                                            <div class="col-12 mb-5">
+                                                <div class="bg-light border-primary border-3 border-start shadow-sm p-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
+                                                        <div>
+                                                            <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
+                                                            <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
+                                                            <span>Yemen - Sanaa</span>
+                                                            <span>My current job since January 2020</span>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <!-- single experience -->
-                                <div class="col-12 mb-5">
-                                    <div class=" shadow-sm p-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
-                                            <div>
-                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
-                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
-                                                <span>Yemen - Sanaa</span>
-                                                <span>My current job since January 2020</span>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single experience -->
-                                <div class="col-12 mb-5">
-                                    <div class=" shadow-sm p-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
-                                            <div>
-                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
-                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
-                                                <span>Yemen - Sanaa</span>
-                                                <span>My current job since January 2020</span>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single experience -->
-                                <div class="col-12 mb-5">
-                                    <div class=" shadow-sm p-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="../templates/detailsExp.html"><h4>Web Developer at platform Company</h4></a>
-                                            <div>
-                                                <button class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square text-primary"></i></button>
-                                                <button class="btn p-0 m-2" data-bs-toggle="modal" data-bs-target="#delete"><i class="bi bi-trash text-danger"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <a href="../templates/detailsExp.html" class="text-black-50 fs-6 d-flex flex-column">
-                                                <span>Yemen - Sanaa</span>
-                                                <span>My current job since January 2020</span>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, velit!</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>
@@ -366,7 +324,8 @@
         </div>
     </div>
 
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

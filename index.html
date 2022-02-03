@@ -6,63 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ahlam Mohammed">
     <meta name="keywords" content="Job , وظائف">
-    <meta name="description" content="موقع مختص في توفير الوظائف">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.rtl.css"> -->
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-<body class="bg">
+    <meta name="description" content="Your career starts here">
     
+    <!-- BootStrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Home</title>
+</head>
+<body class="bg-light">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg" style="backdrop-filter: blur(6px);background-color: hsl(237deg 17% 24% / 51%);">
+    <nav class="navbar navbar-expand-lg bg top-header">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#">Job.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="templates/job.html">Find Jobs</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light">Companies</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a href="templates/about.html" class="nav-link text-light">About Us</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="templates/services.html">Services</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="templates/contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="templates/acount.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="templates/profile.html">Profile</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn text-light mx-3" type="submit"><a class="text-light" href="../templates/login.html"><i class="bi bi-person-fill m-2"></i> Sign in</a></button>
-                    <button class="btn btn btn-outline-light" type="submit"><a class="text-light" href="../templates/register.html"> Sign up</a></button>
-                </form>
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-1 col-2">
+                    <a class="navbar-brand text-white fw-bold" href="index.html">Job.com</a>
+                </div>
+                <div class="col-lg-1 col-8">
+                    <div class="dropdown w-100 d-lg-none d-inline-flex">
+                        <a class="text-center text-light mt-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="assets/images/me2.jpg" width="15%" class="img-fluid rounded-circle border border-2 border-secondary shadow-sm" alt="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="templates/profile.html"><i class="bi bi-person-fill m-2"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="templates/dashboard.html"><i class="bi bi-speedometer m-2"></i> Dashboard</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="templates/login.html"><i class="bi bi-box-arrow-down-right m-2"></i> Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-2">
+                    <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-list fs-2 text-light"></span>
+                    </a>
+                </div>
+                <div class="col-lg-8 col-0">
+                    <div class="collapse navbar-collapse" id="navbarScroll"">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="templates/job.html">Find Jobs</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="templates/companies.html">Companies</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="templates/about.html" class="nav-link text-light">About Us</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="templates/services.html">Services</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="templates/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="w-25 text-end px-5">
+                            <div class="dropdown w-25 d-lg-inline-flex d-none justify-content-end">
+                                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/me2.jpg" width="100%" class="img-fluid rounded-circle border border-2 border-secondary shadow-sm" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="templates/profile.html"><i class="bi bi-person-fill m-2"></i> Profile</a></li>
+                                    <li><a class="dropdown-item" href="templates/profile.html"><i class="bi bi-speedometer m-2"></i> Dashboard</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="templates/login.html"><i class="bi bi-box-arrow-down-right m-2"></i> Sign out</a></li>
+                                </ul>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+                <div class="col-lg-1 col-0">
+                    <div class="dropdown d-lg-inline-flex d-none">
+                        <a class="dropdown-toggle text-center text-light mt-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="assets/images/me2.jpg" width="50%" class="img-fluid rounded-circle border border-2 border-secondary shadow-sm" alt="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="templates/profile.html"><i class="bi bi-person-fill m-2"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="templates/dashboard.html"><i class="bi bi-speedometer m-2"></i> Dashboard</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="templates/login.html"><i class="bi bi-box-arrow-down-right m-2"></i> Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Slider Section -->
-    <section class="mt-md-4 mt-0">
-        <div id="carouselExampleCaptions" class="carousel slide bg py-lg-5 py-3" data-bs-ride="carousel">
+    <section class="">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 80vh; background-image: url(assets/images/circle/bg-none.svg); background-position: center; background-size: cover;">
             <div class="container-lg">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -72,15 +110,29 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
                         <div class="row">
-                            <div class="col-12 col-lg-7 col-md-7 col-sm-7 order-2 order-lg-1 order-md-1 order-sm-1 d-flex justify-content-center align-items-center">
-                                <div class="w-lg-75 w-md-75 p-lg-4 p-md-4 text-center">
-                                    <h1 class="text-light fs-1 text-uppercase fw-bold">Your career starts here</h1>
-                                    <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt rem eaque enim mollitia accusantium omnis </p>
+                            <div class="col-12 col-lg-7 order-2 order-lg-1 d-flex justify-content-center align-items-center">
+                                <div class="w-lg-75 w-md-75 p-lg-4 p-0 text-center">
+                                    <h1 class="text-light fs-2 text-uppercase fw-bold">Your career starts here</h1>
+                                    <p class="text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt rem eaque..</p>
                                 </div>
                             </div>
-                            <div class="d-block col-12 col-lg-5 col-md-5 col-sm-5 order-1 order-lg-2 order-md-2 order-sm-2">
+                            <div class="d-block col-12 col-lg-5 order-1 order-lg-2">
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player class="img-fluid" src="https://assets1.lottiefiles.com/packages/lf20_lqge6px5.json"  background="transparent"  speed="1"  style="width: 500px;"  loop  autoplay></lottie-player>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="row">
+                            <div class="col-12 col-lg-7 order-2 order-lg-1 mt-lg-5 d-flex justify-content-center align-items-center">
+                                <div class="w-lg-75 w-md-75 p-lg-4 p-0 text-center">
+                                    <h1 class="text-light fs-2 mt-lg-5 text-uppercase fw-bold">The Easiest Way to Get Your New Job</h1>
+                                    <p class="text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis veritatis corrupti molestias est nostrum? Harum, consequuntur at nisi laboriosam numquam esse doloribus sed rerum praesentium, vel, ea repellat ex qui!</p>
+                                </div>
+                            </div>
+                            <div class="d-block col-12 col-lg-5 mt-lg-5 order-1 order-lg-2">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player class="img-fluid" src="https://assets6.lottiefiles.com/packages/lf20_e98htmxb.json"  background="transparent"  speed="1"  style="width: 500px;"  loop  autoplay></lottie-player>
                             </div>
                         </div>
                     </div>
@@ -124,7 +176,7 @@
         </div>
     </section>
 
-    <main style="background-color: #ffffffed;; backdrop-filter: blur(6px);">
+    <main>
         <div class="container-lg pt-5">
             <div class="row">
                 <!-- Last Job Section -->
@@ -135,7 +187,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/microsoft.svg" width="100%" alt="microsoft">
@@ -154,7 +206,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -162,7 +214,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/google.svg" width="100%" alt="microsoft">
@@ -181,7 +233,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -189,7 +241,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/discord.svg" width="100%" alt="microsoft">
@@ -208,7 +260,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -216,7 +268,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/samsung.svg" width="100%" alt="microsoft">
@@ -235,7 +287,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -243,7 +295,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/microsoft.svg" width="100%" alt="microsoft">
@@ -262,7 +314,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -270,7 +322,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/google.svg" width="100%" alt="microsoft">
@@ -289,7 +341,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -297,7 +349,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/discord.svg" width="100%" alt="microsoft">
@@ -316,7 +368,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -324,7 +376,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
                             <!-- Single Job -->
-                            <article class="card p-2">
+                            <article class="card p-2 search-job">
                                 <div class="card-title d-flex align-items-center m-0">
                                     <div class="p-1 rounded d-flex justify-content-center logo shadow-sm mt-2">
                                         <img class="img-fluid" src="assets/images/samsung.svg" width="100%" alt="microsoft">
@@ -343,7 +395,7 @@
                                         <p class="fw-light fs-6 text-black-50">You will be expected to lead the company`s entire UI strategy.</p>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5>
+                                        <!-- <h5 class="fw-bold">$6700<span class="fs-8 text-black-50">/month</span></h5> -->
                                         <button type="button" class="btn btn-light text-primary">Apply Now</button>
                                     </div>
                                 </div>
@@ -369,85 +421,216 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
-        <!-- Partners Sections -->
-        <section class="py-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <article class="col-12 position-relative" style="z-index: 999;">
-                        <div class="position-absolute">
-                            <!-- <img src="assets/images/circle/layer01.png" class="img-fluid" width="30%" alt=""> -->
-                        </div>
-                        <section class="col-12">
-                            <header class="d-flex justify-content-center mb-lg-4">
-                                <h1 class="text-primary fw-bold d-inline-block">Partners</h1>
-                            </header>
+                <!-- Companies Section -->
+                <section class="col-12 py-5">  
+                    <header class="d-flex justify-content-center mb-lg-4">
+                        <h1 class="text-primary fw-bold d-inline-block">Our <span class="text-dark"> Partenters</span></h1>
+                    </header>    
+                    <div class="row">
+                        <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
                             <div class="row">
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/chase.svg" width="30%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
-                                        </div>
-                                    </article>
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/360nautica.png" width="100%" alt="microsoft">
+                                    </div>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/microsoft.svg" width="30%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">360 Nautica</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">Dubai</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
                                         </div>
-                                    </article>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/behance.svg" width="30%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/zoom.svg" width="30%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/slack.svg" width="29%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-4 col-4 mt-4">
-                                    <!-- Single Partners -->
-                                    <article class="card p-2 bg-50">
-                                        <div class="card-title d-flex flex-column align-items-center justify-content-center m-0">
-                                            <img class="img-fluid" src="assets/images/pizza.svg" width="28%" alt="microsoft">
-                                            <!-- <h3 class="mb-0"><a class="text-white fs-5" href="#">Microsoft</a></h3> -->
-                                        </div>
-                                    </article>
+                                    </div>
                                 </div>
                             </div>
-                        </section>
-                    </article>
-                </div>
+                        </article>
+                    </div>  
+                    <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/hassanis.png" width="100%" alt="microsoft">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">Hassans Optician</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">Al Kuwait</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>  
+                    <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/rawabiHolding.png" width="100%" alt="microsoft">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">Rawabi Holding Company</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">Eastern Province, Saudi Arabia</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/PROVEN.png" width="100%" alt="microsoft">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">PROVEN</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">Riyadh</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>  
+                    <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/hassanis.png" width="100%" alt="microsoft">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">Hassanis</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">New York</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>  
+                    <!-- Single Company -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <article class="card p-2 mb-3 shadow rounded-3 search-job">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="rounded d-flex justify-content-center shadow-sm mt-2">
+                                        <img class="img-fluid" src="assets/images/company/hassanis.png" width="100%" alt="microsoft">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center flex-column">
+                                                <h3 class="mb-0"><a class="text-primary fs-5" href="#">Hassans Optician</a></h3>
+                                                <p class="fs-7 text-black mb-0">General Engineering Consultancy</p>
+                                                <span class="fs-8 text-black-50 mb-0">Al Kuwait</span>
+                                                <button type="button" class="btn btn-light text-primary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div> 
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>        
     </main>
     
 
+    <!-- Footer -->
+    <footer style="background-image: url(assets/images/circle/bg.svg); background-position: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center flex-lg-row flex-md-row flex-column">
+                    <a class="text-white fs-3 fw-bold" href="index.html">Job.com</a>
+                    <a class="text-white fs-6" href="templates/profile.html">© 2022 Copyright: Ahlam Mohammed</a>
+                    <div class="d-flex gap-4 align-items-center justify-content-center">
+                        <div class=" d-flex  align-items-center justify-content-center">
+                            <i class="bi bi-facebook text-light"></i>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center">
+                            <i class="bi bi-twitter text-light"></i>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center">
+                            <i class="bi bi-linkedin text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+
+        let   scrollpos     = window.scrollY;
+        const header        = document.querySelector(".top-header");
+        const banner        = document.querySelector(".banner");
+        const header_height = banner.offsetHeight + header.offsetHeight;
+
+        window.addEventListener('scroll', function() 
+        { 
+            scrollpos = window.scrollY;
+
+            if (scrollpos >= header_height) 
+            { 
+                $('nav.top-header').removeClass('bg').addClass('bg--light');
+                $('li.nav-item a').removeClass("text-light").addClass('text-black');
+                $('.navbar-brand').removeClass('text-white').addClass('text-primary');
+                $('.dropdown-toggle').removeClass('text-white').addClass('text-black');
+            }
+            else 
+            { 
+                $('nav.top-header').removeClass('bg--light').addClass('bg');
+                $('li.nav-item a').removeClass("text-black").addClass('text-light');
+                $('.navbar-brand').removeClass('text-primary').addClass('text-white');
+                $('.dropdown-toggle').removeClass('text-black').addClass('text-white');
+
+            }
+        })
+    </script>
 </body>
 </html>
