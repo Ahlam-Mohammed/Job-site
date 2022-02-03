@@ -99,7 +99,7 @@
     </nav>
 
     <!-- Slider Section -->
-    <section class="">
+    <section class="banner">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 80vh; background-image: url(assets/images/circle/bg-none.svg); background-position: center; background-size: cover;">
             <div class="container-lg">
                 <div class="carousel-indicators">
@@ -621,6 +621,8 @@
                 $('li.nav-item a').removeClass("text-light").addClass('text-black');
                 $('.navbar-brand').removeClass('text-white').addClass('text-primary');
                 $('.dropdown-toggle').removeClass('text-white').addClass('text-black');
+                $('.navbar-toggler span').removeClass('text-light').addClass('text-black');
+                
             }
             else 
             { 
@@ -628,6 +630,7 @@
                 $('li.nav-item a').removeClass("text-black").addClass('text-light');
                 $('.navbar-brand').removeClass('text-primary').addClass('text-white');
                 $('.dropdown-toggle').removeClass('text-black').addClass('text-white');
+                $('.navbar-toggler span').removeClass('text-black').addClass('text-light');
 
             }
         })
