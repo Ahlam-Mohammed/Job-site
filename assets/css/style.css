@@ -104,6 +104,19 @@ a{
         width: 40%;
     }
 }
+/* hover */
+.btn-outline-primary:hover{
+    color: white !important;
+    background-color: #766DF4 !important;
+}
+.btn-light:hover {
+    color: white !important;
+    background-color: #766DF4 !important;
+}
+.btn-primary:hover{
+    color: #766DF4 !important;
+    background-color: #F8F9FA !important;
+}
 /* circle Progress */
 .progress__circular{
     display:grid;
@@ -141,7 +154,7 @@ a{
     z-index:10;
     font-size:18px;
     font-weight:500;
-    color:#0D6EFD;
+    color:#766DF4;
 }
 .circular .bar{
     position: absolute;
@@ -157,7 +170,7 @@ a{
     width: 100%;
     -webkit-border-radius: 100%;
     clip: rect(0px, 50px, 100px, 0px);
-    background: #0D6EFD;
+    background: #766DF4;
 }
 .circle .left .progress{
     z-index:1;
